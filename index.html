@@ -6,7 +6,7 @@
     <title>Nguyễn Phương Linh | Digital Portfolio</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Lora (Hiển thị tiếng Việt nghiêng đẹp, chuẩn xác) & Nunito (Phổ thông, dễ đọc) -->
+    <!-- Google Fonts: Lora (Chữ Serif hiển thị tiếng Việt nghiêng chuẩn) & Nunito (Không chân, dễ đọc) -->
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- FontAwesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -69,7 +69,7 @@
             animation-delay: 2s;
         }
 
-        /* Bong bóng nước trang trí */
+        /* Bong bóng nước trang trí nền */
         .bubble {
             position: absolute;
             bottom: -50px;
@@ -125,7 +125,7 @@
             width: 100%;
         }
 
-        /* Bo tròn avatar kiểu vỏ sò mềm mại */
+        /* Bo tròn avatar vỏ sò */
         .shell-avatar {
             border-radius: 43% 57% 50% 50% / 57% 43% 57% 53%;
             box-shadow: 0 15px 30px rgba(12, 74, 110, 0.15);
@@ -153,7 +153,7 @@
             <div class="hidden md:flex items-center space-x-8 font-semibold text-sm">
                 <a href="#about" class="nav-link text-ocean-deep/80 hover:text-ocean-deep transition">Giới thiệu</a>
                 <a href="#projects" class="nav-link text-ocean-deep/80 hover:text-ocean-deep transition">Bài tập thực hành</a>
-                <a href="#reflection" class="nav-link text-ocean-deep/80 hover:text-ocean-deep transition">Đánh giá & Tổng kết</a>
+                <a href="#reflection" class="nav-link text-ocean-deep/80 hover:text-ocean-deep transition">Trang tổng kết</a>
             </div>
 
             <div>
@@ -378,37 +378,80 @@
         </div>
     </section>
 
-    <!-- 4. Section Tổng kết -->
-    <section id="reflection" class="py-24 px-6 relative overflow-hidden bg-slate-900 text-white">
-        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(8,47,73,0.9)_0%,rgba(15,23,42,1)_100%)] z-0"></div>
+    <!-- 4. Section Tổng kết (Detailed & Structured) -->
+    <section id="reflection" class="py-24 px-6 relative overflow-hidden bg-slate-900 text-slate-100">
+        <!-- Nền đại dương sâu thẳm -->
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(8,47,73,0.95)_0%,rgba(15,23,42,1)_100%)] z-0"></div>
 
-        <div class="max-w-4xl mx-auto relative z-10 space-y-12">
+        <div class="max-w-5xl mx-auto relative z-10 space-y-16">
             
-            <div class="text-center">
-                <h2 class="font-serif italic text-3xl md:text-4xl font-bold">Đánh giá & Tổng kết</h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-sky-400 to-indigo-500 mx-auto mt-4 rounded-full"></div>
+            <div class="text-center space-y-3">
+                <div class="inline-flex items-center space-x-2 bg-sky-500/10 border border-sky-500/30 text-sky-400 text-xs font-semibold px-4 py-1.5 rounded-full">
+                    <i class="fa-solid fa-flag-checkered"></i>
+                    <span>Tổng kết môn học</span>
+                </div>
+                <h2 class="font-serif italic text-3xl md:text-5xl font-bold">Trang Tổng Kết Dự Án</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-sky-400 to-indigo-500 mx-auto mt-4 rounded-full"></div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm leading-relaxed">
-                <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-md">
-                    <h3 class="font-serif font-semibold text-lg text-sky-400 mb-3"><i class="fa-solid fa-lightbulb mr-2"></i> Nhận thức cốt lõi</h3>
-                    <p class="text-slate-300">
-                        Mình nhận thấy AI là một công cụ hỗ trợ tuyệt vời, giúp tự động hóa và tăng tốc độ xử lý thông tin rất nhanh. Tuy nhiên, vai trò kiểm chứng thông tin, chọn lọc ngôn từ phù hợp bối cảnh văn hóa của người học vẫn luôn là yếu tố quyết định chất lượng của sản phẩm cuối cùng.
-                    </p>
+            <!-- Grid 3 phần chi tiết theo đề bài yêu cầu -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- Phần 1: Trải nghiệm & Cảm nhận cá nhân -->
+                <div class="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 text-xl">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-sky-300">1. Cảm nhận & Trải nghiệm</h3>
+                        <p class="text-sm text-slate-300 leading-relaxed">
+                            Quá trình xây dựng trang Portfolio này thực sự là một trải nghiệm học hỏi rất bổ ích với mình. Ban đầu, mình nghĩ một sinh viên chuyên ngành ngoại ngữ như mình sẽ gặp nhiều khó khăn để tiếp cận các nội dung kỹ thuật số. 
+                        </p>
+                        <p class="text-sm text-slate-300 leading-relaxed">
+                            Nhưng khi tự tay hệ thống lại cả 6 bài tập lớn này, mình nhận thấy bản thân đã vượt qua được những bỡ ngỡ ban đầu và làm chủ tốt hơn các công cụ trực tuyến. Việc nhìn thấy các kết quả thực hành hiển thị trực quan đem lại cho mình cảm giác rất tự tin.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-md">
-                    <h3 class="font-serif font-semibold text-lg text-sky-400 mb-3"><i class="fa-solid fa-check mr-2"></i> Kỹ năng đạt được</h3>
-                    <p class="text-slate-300">
-                        Từ việc thao tác hệ thống cơ bản ban đầu, mình đã tự tin hơn khi tìm kiếm thông tin học thuật có chọn lọc, biết cách tinh chỉnh câu lệnh Prompt tối ưu và phối hợp tốt với các thành viên trong các dự án làm việc nhóm trực tuyến.
-                    </p>
+                <!-- Phần 2: Kiến thức & Kỹ năng quan trọng nhất -->
+                <div class="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 text-xl">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-sky-300">2. Kiến thức & Kỹ năng</h3>
+                        <div class="space-y-3 text-xs text-slate-300 leading-relaxed">
+                            <p>
+                                <strong class="text-sky-200">Kỹ năng Prompt Engineering:</strong> Biết cách hướng dẫn AI giải quyết công việc theo yêu cầu cụ thể bằng câu lệnh chi tiết, có gán vai trò rõ ràng và tư duy từng bước.
+                            </p>
+                            <p>
+                                <strong class="text-sky-200">Kỹ năng Đánh giá Thông tin:</strong> Biết cách thiết lập bộ tiêu chuẩn đo lường nguồn học thuật đáng tin cậy để phục vụ nghiên cứu và phân tách thông tin rác.
+                            </p>
+                            <p>
+                                <strong class="text-sky-200">Kỹ năng Cộng tác:</strong> Phối hợp tốt hơn trên các nền tảng dùng chung và ứng dụng linh hoạt các công cụ AI hỗ trợ soạn thảo, minh họa, thiết kế học liệu.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
-            <div class="bg-gradient-to-r from-sky-950/80 to-indigo-950/80 border border-sky-800/40 rounded-3xl p-8 text-center space-y-4">
-                <p class="text-sm text-slate-400 max-w-xl mx-auto">
-                    Trong tương lai, mình sẽ tiếp tục áp dụng các kỹ năng số đã học vào việc nghiên cứu chuyên ngành Ngôn ngữ Nhật Bản một cách chủ động và có trách nhiệm.
-                </p>
+                <!-- Phần 3: Tâm đắc & Thách thức lớn nhất -->
+                <div class="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-md flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="w-12 h-12 rounded-2xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 text-xl">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-xl text-sky-300">3. Tâm đắc & Thách thức</h3>
+                        <div class="space-y-3 text-xs text-slate-300 leading-relaxed">
+                            <p>
+                                <strong class="text-sky-200">Điều tâm đắc nhất:</strong> Mình tự hào vì đã biến trang portfolio tĩnh thành một môi trường có tính tương tác. Người xem không chỉ đọc các báo cáo khô khan, mà còn có thể trực tiếp click giả lập thư mục, tự tay chấm điểm nguồn tài liệu hoặc giải đố ngoại ngữ để kiểm tra kết quả ngay lập tức.
+                            </p>
+                            <p>
+                                <strong class="text-slate-100 font-bold">Thách thức lớn nhất:</strong> Là rào cản kỹ thuật ban đầu. Việc xây dựng trang web, làm quen với các thẻ HTML, điều chỉnh thuộc tính CSS để hiển thị mượt mà trên cả máy tính lẫn điện thoại, cũng như xử lý các lỗi font chữ tiếng Việt đã lấy đi của mình khá nhiều thời gian tự mò mẫm, sửa lỗi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
